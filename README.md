@@ -14,7 +14,7 @@ This library provides Go clients for [OpenAI API](https://platform.openai.com/).
 
 Installation:
 ```
-go get github.com/sashabaranov/go-openai
+go get github.com/efontan-dialpad/go-openai
 ```
 
 
