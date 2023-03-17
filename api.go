@@ -90,7 +90,7 @@ func (c *Client) newStreamRequest(
 	ctx context.Context,
 	method string,
 	urlSuffix string,
-	body any) (*http.Request, error) {
+	body interface{}) (*http.Request, error) {
 	req, err := c.requestBuilder.build(ctx, method, c.fullURL(urlSuffix), body)
 	if err != nil {
 		return nil, err

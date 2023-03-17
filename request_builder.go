@@ -7,7 +7,7 @@ import (
 )
 
 type requestBuilder interface {
-	build(ctx context.Context, method, url string, request any) (*http.Request, error)
+	build(ctx context.Context, method, url string, request interface{}) (*http.Request, error)
 }
 
 type httpRequestBuilder struct {
@@ -20,7 +20,7 @@ func newRequestBuilder() *httpRequestBuilder {
 	}
 }
 
-func (b *httpRequestBuilder) build(ctx context.Context, method, url string, request any) (*http.Request, error) {
+func (b *httpRequestBuilder) build(ctx context.Context, method, url string, request interface{}) (*http.Request, error) {
 	if request == nil {
 		return http.NewRequestWithContext(ctx, method, url, nil)
 	}

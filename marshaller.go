@@ -5,11 +5,11 @@ import (
 )
 
 type marshaller interface {
-	marshal(value any) ([]byte, error)
+	marshal(value interface{}) ([]byte, error)
 }
 
 type jsonMarshaller struct{}
 
-func (jm *jsonMarshaller) marshal(value any) ([]byte, error) {
+func (jm *jsonMarshaller) marshal(value interface{}) ([]byte, error) {
 	return json.Marshal(value)
 }
