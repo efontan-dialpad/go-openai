@@ -13,6 +13,8 @@ This library provides Go clients for [OpenAI API](https://platform.openai.com/).
 * Whisper
 
 Installation:
+> Go minimum recommended version: 1.17
+
 ```
 go get github.com/efontan-dialpad/go-openai
 ```
