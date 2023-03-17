@@ -1,11 +1,11 @@
 package openai_test
 
 import (
-	. "github.com/sashabaranov/go-openai"
-
 	"bytes"
 	"encoding/json"
 	"testing"
+
+	. "github.com/efontan-dialpad/go-openai"
 )
 
 func TestEmbedding(t *testing.T) {

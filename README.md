@@ -1,6 +1,6 @@
 # Go OpenAI
-[![GoDoc](http://img.shields.io/badge/GoDoc-Reference-blue.svg)](https://godoc.org/github.com/sashabaranov/go-openai)
-[![Go Report Card](https://goreportcard.com/badge/github.com/sashabaranov/go-openai)](https://goreportcard.com/report/github.com/sashabaranov/go-openai)
+[![GoDoc](http://img.shields.io/badge/GoDoc-Reference-blue.svg)](https://godoc.org/github.com/efontan-dialpad/go-openai)
+[![Go Report Card](https://goreportcard.com/badge/github.com/efontan-dialpad/go-openai)](https://goreportcard.com/report/github.com/efontan-dialpad/go-openai)
 [![codecov](https://codecov.io/gh/sashabaranov/go-openai/branch/master/graph/badge.svg?token=bCbIfHLIsW)](https://codecov.io/gh/sashabaranov/go-openai)
 
 > **Note**: the repository was recently renamed from `go-gpt3` to `go-openai`
@@ -28,7 +28,7 @@ package main
 import (
 	"context"
 	"fmt"
-	openai "github.com/sashabaranov/go-openai"
+	openai "github.com/efontan-dialpad/go-openai"
 )
 
 func main() {
@@ -69,7 +69,7 @@ package main
 import (
 	"context"
 	"fmt"
-	openai "github.com/sashabaranov/go-openai"
+	openai "github.com/efontan-dialpad/go-openai"
 )
 
 func main() {
@@ -102,7 +102,7 @@ import (
 	"context"
 	"fmt"
 	"io"
-	openai "github.com/sashabaranov/go-openai"
+	openai "github.com/efontan-dialpad/go-openai"
 )
 
 func main() {
@@ -151,7 +151,7 @@ import (
 	"context"
 	"fmt"
 
-	openai "github.com/sashabaranov/go-openai"
+	openai "github.com/efontan-dialpad/go-openai"
 )
 
 func main() {
@@ -183,7 +183,7 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
-	openai "github.com/sashabaranov/go-openai"
+	openai "github.com/efontan-dialpad/go-openai"
 	"image/png"
 	"os"
 )
@@ -271,7 +271,7 @@ config.HTTPClient = &http.Client{
 c := openai.NewClientWithConfig(config)
 ```
 
-See also: https://pkg.go.dev/github.com/sashabaranov/go-openai#ClientConfig
+See also: https://pkg.go.dev/github.com/efontan-dialpad/go-openai#ClientConfig
 </details>
 
 <details>
@@ -287,7 +287,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sashabaranov/go-openai"
+	"github.com/efontan-dialpad/go-openai"
 )
 
 func main() {

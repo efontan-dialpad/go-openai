@@ -1,9 +1,6 @@
 package openai_test
 
 import (
-	. "github.com/sashabaranov/go-openai"
-	"github.com/sashabaranov/go-openai/internal/test"
-
 	"context"
 	"encoding/json"
 	"errors"
@@ -14,6 +11,9 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	. "github.com/efontan-dialpad/go-openai"
+	"github.com/efontan-dialpad/go-openai/internal/test"
 )
 
 func TestCompletionsWrongModel(t *testing.T) {

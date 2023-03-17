@@ -1,9 +1,6 @@
 package openai_test
 
 import (
-	. "github.com/sashabaranov/go-openai"
-	"github.com/sashabaranov/go-openai/internal/test"
-
 	"context"
 	"encoding/json"
 	"fmt"
@@ -11,6 +8,9 @@ import (
 	"net/http"
 	"testing"
 	"time"
+
+	. "github.com/efontan-dialpad/go-openai"
+	"github.com/efontan-dialpad/go-openai/internal/test"
 )
 
 // TestEdits Tests the edits endpoint of the API using the mocked server.

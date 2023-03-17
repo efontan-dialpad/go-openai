@@ -1,14 +1,14 @@
 package openai_test
 
 import (
-	. "github.com/sashabaranov/go-openai"
-	"github.com/sashabaranov/go-openai/internal/test"
-
 	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"testing"
+
+	. "github.com/efontan-dialpad/go-openai"
+	"github.com/efontan-dialpad/go-openai/internal/test"
 )
 
 const testFineTuneID = "fine-tune-id"
